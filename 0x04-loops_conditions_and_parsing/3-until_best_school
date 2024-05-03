@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Display "Best School" 10 times use until
+
+#initialize the count
+count=0;
+
+#iterate to diplay
+until [ $count -ge 10 ]; do
+	echo "Best School"
+	((count++))
+done

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# display "bad luck" and "good luck" on 4th and 8th iteration resp
+
+# initialize the count
+count=1;
+
+#iterate to diplay
+while [ $count -le 10 ]; do
+	if [ $count -eq 4 ]; then
+		echo "bad luck"
+	elif [ $count -eq 8 ]; then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+
+	((count++))
+done

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# display the FizzBuzz
+# FizzBuzz - multiple of 3 and 5
+# Fizz - multiple of 3
+# Buzz - multiple of 5
+
+#initilize the count
+count=1
+
+# iterate to print
+while [ $count -le 100 ]; do
+	if [ $((count % 15)) -eq 0 ]; then
+		echo "FizzBuzz"
+	elif [ $((count % 3)) -eq 0 ]; then
+		echo "Fizz"
+	elif [ $((count % 5)) -eq 0 ]; then
+		echo "Buzz"
+	else
+		echo "$count"
+	fi
+	((count++))
+done

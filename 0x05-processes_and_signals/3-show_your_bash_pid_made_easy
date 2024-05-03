@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Get PID of current script
+pid_script=$$
+
+# get the PIDs of processes containing bash
+pids=$(pgrep bash)
+
+# Display the PID and process name for each "bash" process
+for pid in $pids; do
+	process_name=$(awk '/Name/{print $2}' "/proc/$pid/status")
+	echo "$pid $process_name"
+done
+
+# display the pid of the script itself
+echo "$pid_script $0"

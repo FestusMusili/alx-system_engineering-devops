@@ -2,7 +2,7 @@
 # print "Best School" 10 times use a while loop
 
 # initialize a counter
-count=0;
+count=1;
 
 # iterate to display "Best School"
 while (("$count" <= 10)); do

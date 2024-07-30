@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This script exports the to-do list information for a specified employee ID into CSV format."""
+"""This script exports the to-do list information
+for a specified employee ID into CSV format."""
 
 import csv
 import requests
@@ -12,7 +13,8 @@ if __name__ == "__main__":
     # Defining the base URL for the JSONPlaceholder API
     base_url = "https://jsonplaceholder.typicode.com/"
 
-    # Fetching user data from the API and converting the response to JSON format
+    # Fetching user data from the API and \
+    converting the response to JSON format
     user_data = requests.get(base_url + "users/{}".format(user_id)).json()
 
     # Retrieving the username from the user data
@@ -20,7 +22,8 @@ if __name__ == "__main__":
 
     # Fetching the to-do list items associated with the specified user ID
     # and converting the response to JSON format
-    todo_items = requests.get(base_url + "todos", params={"userId": user_id}).json()
+    todo_items = requests.get(base_url + "todos",
+                              params={"userId": user_id}).json()
 
     # Using list comprehension to iterate through the to-do list items
     # and writing each item's details (user ID, username, completion status,

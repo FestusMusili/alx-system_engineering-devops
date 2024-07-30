@@ -2,11 +2,13 @@
 """
 Exports to-do list information of all employees to JSON format.
 
-This script retrieves user details and their respective to-do lists for all employees
+This script retrieves user details and their respective \
+to-do lists for all employees
 """
 
 import json
 import requests
+
 
 def fetch_user_data():
     """Retrieves user details and to-do lists for all employees."""
@@ -36,6 +38,7 @@ def fetch_user_data():
         ]
 
     return data_to_export
+
 
 if __name__ == "__main__":
     # Fetch user data for all employees

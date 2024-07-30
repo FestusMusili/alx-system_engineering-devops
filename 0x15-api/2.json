@@ -46,7 +46,8 @@
             "username": "Antonette"
         },
         {
-            "task": "nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis",
+            "task": "nemo perspiciatis repellat ut dolor \
+libero commodi blanditiis omnis",
             "completed": true,
             "username": "Antonette"
         },
@@ -76,7 +77,8 @@
             "username": "Antonette"
         },
         {
-            "task": "excepturi deleniti adipisci voluptatem et neque optio illum ad",
+            "task": "excepturi deleniti adipisci \
+voluptatem et neque optio illum ad",
             "completed": true,
             "username": "Antonette"
         },
@@ -91,7 +93,8 @@
             "username": "Antonette"
         },
         {
-            "task": "doloremque quibusdam asperiores libero corrupti illum qui omnis",
+            "task": "doloremque quibusdam asperiores \
+libero corrupti illum qui omnis",
             "completed": false,
             "username": "Antonette"
         },

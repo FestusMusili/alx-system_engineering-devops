@@ -2,7 +2,8 @@
 """
 Converts to-do list details for a specified employee ID into JSON format.
 
-This script retrieves information about the user and their to-do list items for a given
+This script retrieves information about \
+the user and their to-do list items for a given
 employee ID from the JSONPlaceholder API and saves them as a JSON file.
 """
 

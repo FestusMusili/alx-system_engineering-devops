@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""This script exports the to-do list information \
-for a specified employee ID into CSV format."""
+"""This script exports the to-do list information for a specified employee ID into CSV format."""
 
 import csv
 import requests
-import sys
+import sys  
 
 if __name__ == "__main__":
     # Extracting the user ID from the command-line arguments
@@ -13,10 +12,8 @@ if __name__ == "__main__":
     # Defining the base URL for the JSONPlaceholder API
     base_url = "https://jsonplaceholder.typicode.com/"
 
-    # Fetching user data from the API \
-and converting the response to JSON format
-    user_data = requests.get \
-            (base_url + "users/{}".format(user_id)).json()
+    # Fetching user data from the API and converting the response to JSON format
+    user_data = requests.get(base_url + "users/{}".format(user_id)).json()
 
     # Retrieving the username from the user data
     username = user_data.get("username")
